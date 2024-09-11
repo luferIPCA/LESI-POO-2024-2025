@@ -1,0 +1,44 @@
+
+Carregar material do Repositório
+
+
+1) git remote add https://github.com/luferIPCA/LESI-POO-2024-2025.git
+2) git fetch
+3) git pull
+
+ou então
+
+4) git pull https://github.com/luferIPCA/LESI-POO-2024-2025.git
+
+ou então
+
+5) Fazer cópia integral de repositótio git remoto
+	
+	git clone https://github.com/luferIPCA/LESI-POO-2024-2025.git
+
+
+---------------------------------------------------------------------------------
+
+
+…or create a new repository on the command line
+
+echo "# LESI-ISI-2024-2025" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/luferIPCA/LESI-POO-2024-2025.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/luferIPCA/LESI-POO-2024-2025.git
+git branch -M main
+git push -u origin main
+
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+by lufer (2024-2025)
