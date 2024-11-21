@@ -6,12 +6,6 @@
 *   <date>10/1/2024 3:25:05 PM</date>
 *	<description></description>
 **/
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-
 
 namespace Aula_03
 {

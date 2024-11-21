@@ -39,10 +39,10 @@ namespace Aula_03
         public static string GetMarca()
         {
             return marca.ToUpper();
-        }       
+        }
 
         #endregion
     }
 
-  
+
 }

@@ -77,15 +77,16 @@ namespace Aula_04
         {
             //=>
             get { return nomePessoa.ToUpper(); }
-            set { 
-                if(value.Length>0)
-                    nomePessoa = value; 
+            set
+            {
+                if (value.Length > 0)
+                    nomePessoa = value;
             }
         }
 
         public int Idade
         {
-            set { if(value>0 && value<200) idade = value; }
+            set { if (value > 0 && value < 200) idade = value; }
         }
 
         #endregion

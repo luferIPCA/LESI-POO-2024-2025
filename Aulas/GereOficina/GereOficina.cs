@@ -1,28 +1,27 @@
 ﻿/*
-*	<copyright file="Aula_07_Pilars.cs" company="IPCA">
+*	<copyright file="GereOficina.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>mustl</author>
-*   <date>10/31/2024 10:07:30 AM</date>
+*   <date>10/28/2024 10:22:22 AM</date>
 *	<description></description>
 **/
 using System;
 
-namespace Aula_07_Pilars
+namespace GereOficina
 {
     /// <summary>
     /// Purpose:
     /// Created by: mustl
-    /// Created on: 10/31/2024 10:07:30 AM
+    /// Created on: 10/28/2024 10:22:22 AM
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Outra
-    {    
-        public double Detalhes(IVeiculo v)
+    public class GereOficina
+    {
+        static void Main(string[] args)
         {
-            return v.Celindrada(2);
         }
-
     }
+
 }

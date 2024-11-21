@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CC2084A3-00BE-43CD-8310-0C5435FD6D74}</ProjectGuid>
+    <ProjectGuid>{B66ADEEE-F07C-4DE5-9DC3-E1D9268021CD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Aula_07___Pilars</RootNamespace>
-    <AssemblyName>Aula 07 - Pilars</AssemblyName>
+    <RootNamespace>Calculadora</RootNamespace>
+    <AssemblyName>Calculadora</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Operacoes">
+      <HintPath>..\Operacoes\bin\Debug\Operacoes.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,20 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstracts.cs" />
-    <Compile Include="Bike.cs" />
-    <Compile Include="Carro.cs" />
-    <Compile Include="Interfaces.cs" />
-    <Compile Include="Outra.cs" />
-    <Compile Include="OutroVeiculo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RealVeiculo.cs" />
-    <Compile Include="Veiculo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

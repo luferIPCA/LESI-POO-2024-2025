@@ -6,11 +6,6 @@
 *   <date>10/8/2024 3:36:02 PM</date>
 *	<description></description>
 **/
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 
 namespace Aula_05
 {
@@ -27,7 +22,7 @@ namespace Aula_05
         int x;
         int y;
         int resultado;
-        
+
         #endregion
 
         #region Methods

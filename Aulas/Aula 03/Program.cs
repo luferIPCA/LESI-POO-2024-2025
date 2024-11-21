@@ -7,7 +7,7 @@ namespace Aula_03
     {
         static void Main(string[] args)
         {
-            
+
             Carro.DefineMarca("Ford");
             Carro.marca = "Fiat";
 

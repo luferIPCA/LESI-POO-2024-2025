@@ -26,9 +26,9 @@ namespace Aula_02
         /// <param name="x">Valor 1</param>
         /// <param name="y">Valor 2</param>
         /// <returns>Soma</returns>
-        public  static int Soma(int x, int y) 
+        public static int Soma(int x, int y)
         {
-            return x + y; 
+            return x + y;
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Aula_02
             return (x - y);
         }
 
-      
+
 
         /// <summary>
         /// Função que...
@@ -61,12 +61,12 @@ namespace Aula_02
             Console.WriteLine("Valor de X= {0}", x.ToString()); //+ Correcta!!!!
             Console.WriteLine("Valor de X " + x.ToString());
 
-            Console.WriteLine("Valor de X= {0}; {1}", x.ToString(),100);
+            Console.WriteLine("Valor de X= {0}; {1}", x.ToString(), 100);
 
             int s = Soma(2, 3);
 
             int b = Outra.Sub(2, 3);
-            b = Sub(3,3);
+            b = Sub(3, 3);
 
             #endregion
 
