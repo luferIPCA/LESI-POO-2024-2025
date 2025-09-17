@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Carro">
+      <HintPath>..\Carro\bin\Debug\net5.0\Carro.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

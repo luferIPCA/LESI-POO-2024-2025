@@ -13,7 +13,7 @@ namespace MyCollections
 
         public MySortedList()
         {
-            st = new SortedList(CAPACITY);
+            if (st==null) st = new SortedList(CAPACITY);//singleton
         }
 
         public MySortedList(int n)

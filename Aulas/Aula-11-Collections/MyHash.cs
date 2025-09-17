@@ -13,6 +13,7 @@
  * */
 
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace MyCollections
@@ -23,7 +24,7 @@ namespace MyCollections
     class MyHashTable
     {
 
-        const int HASHSIZE=50;
+        const int HASHSIZE=51;
         private Hashtable myHash;
 
         public MyHashTable()
@@ -62,7 +63,7 @@ namespace MyCollections
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public int MyGetHashCode(string s, int max)
+        public int MyGetHashCode(string s, int size)
         {
             char[] aux = s.ToCharArray();
             int key = 0;
@@ -70,7 +71,7 @@ namespace MyCollections
             {
                 key += (int)c;
             }
-            return (key % max);
+            return (key % size);
         }
 
 
@@ -86,7 +87,7 @@ namespace MyCollections
             }
             else
             {
-                int key = MyGetHashCode(((Pessoa)o).nome, HASHSIZE);  //descobre a hask key
+                int key = MyGetHashCode(((Pessoa)o).nome, 50);  //descobre a hask key
 
                 if (!myHash.ContainsKey(key))
                 {
@@ -102,7 +103,16 @@ namespace MyCollections
             //    produtos.Add(key, new List<Product>());       //Se não existe cria o ArrayList
             //}
             //produtos[key].Add(p)
+        }
 
+        public bool ExisteValor(object k)
+        {
+            if (!(k is string)) return false;
+            string s = k as string;
+
+            int chave = MyGetHashCode(s,51);
+            if (!myHash.ContainsKey(chave)) { return false; }   
+            return ((ArrayList)(myHash[chave])).Contains(k);
         }
 
         #endregion

@@ -220,10 +220,15 @@ namespace MyCollections
             carros.Add(new Carro("19-12-12"));
             carros.Add(new Carro("12-12-13"));
             carros.Add(new Carro("13-12-12"));
+            //carros.Add(1); //CUIDADO
 
-            foreach (Carro c in carros)
+            foreach (Object c in carros)
             {
-                Console.WriteLine("Mat= " + c.matricula);
+                if (c is Carro)
+                {
+                    Carro caux = c as Carro;
+                    Console.WriteLine("Mat= " + caux.matricula);
+                }
             }
 
             carros.Sort(new MyComparer());
